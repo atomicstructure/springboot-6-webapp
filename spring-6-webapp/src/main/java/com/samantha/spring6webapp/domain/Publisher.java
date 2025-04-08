@@ -16,6 +16,8 @@ public class Publisher {
     private String state;
     private String zip;
 
+    @OneToMany(mappedBy = "publisher")
+    private Set<Book> books;
 
 
     public long getId() {
